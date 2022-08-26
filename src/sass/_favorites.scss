@@ -66,8 +66,14 @@
   }
 }
 
+
 .favorites__img {
   background: var(--main-bg-color);
+
+  &:hover,
+  &:focus {
+    border-color: var(--hover-green-color);
+  }
 
   @media screen and (max-width: 767px) {
     border: 11px solid var(--main-yellow-color);
