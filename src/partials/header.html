@@ -1,1 +1,46 @@
-<div class=""></div>
+    <header class="header">
+    <div class="header__container container">
+        <svg class="logo" width="71" height="51" aria-label="FoodSta">
+        <use href="/src/images/icon.svg#logo"></use>
+        </svg>
+        <button
+          class="btn-mobile-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="btn-mobile-menu__icon"
+            width="28"
+            height="28"
+            aria-label="Открыть мобильное меню"
+          >
+            <use href="/src/images/icon.svg#mobile-menu-btn"></use>
+          </svg>
+        </button>
+        <nav class="nav">
+          <button
+          class="btn-mobile-menu btn-mobile-menu__close"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+          class="btn-mobile-menu__icon--close"
+          width="24"
+          height="24"
+          aria-label="Открыть мобильное меню"
+        >
+          <use href="/src/images/icon.svg#mobile-menu-btn-close"></use>
+        </svg>
+      </button>
+            <ul class="nav__list list">
+                <li class="nav__item"><a class="nav__link link" href="#home">Home</a></li>
+                <li class="nav__item"><a class="nav__link link" href="#about">About</a></li>
+                <li class="nav__item"><a class="nav__link link" href="#service">Service</a></li>
+                <li class="nav__item"><a class="nav__link link" href="#menu">Menu</a></li>
+                <li class="nav__item"><a class="nav__link link" href="#contacts">Contact</a></li>
+            </ul>
+            <button class="btn btn__header" type="button">Order Now</button>
+        </nav>
+
+    </div>
+</header>
