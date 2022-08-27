@@ -1,0 +1,107 @@
+.hero {
+    display: flex;
+    margin-bottom: -161px;
+
+    &__left-side {
+        padding-top: 159px;
+        margin-right: auto;
+
+        width: 502px;
+    }
+
+    &__title {
+        margin: 0 0 28px;
+    }
+
+    &__text {
+        margin: 0 0 40px;
+    }
+
+    &__btn {
+        padding: 0;
+
+        font-family: var(--font);
+        font-size: 14px;
+        line-height: 1.5;
+        color: var(--main-text-color);
+
+        width: 100px;
+        height: 32px;
+        background-color: var(--hover-green-color);
+        border-radius: 30px;
+        border: none;
+
+        cursor: pointer;
+    }
+
+    &__btn:hover,
+    &__btn:focus {
+        background-color: #B5FF00;
+    }
+
+    &__right-side {
+        position: relative;
+        // margin-bottom: -100px;
+        z-index: 10;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 608px;
+        height: 608px;
+    }
+
+    &__dishes-menu {
+
+        width: 580px;
+        height: 580px;
+
+        border: 26px solid var(--main-yellow-color);
+        border-radius: 50%;
+    }
+
+    &__img {
+        display: block;
+    }
+
+    &__arrow-left {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        padding: 5px 0;
+        transform: translateY(-50%);
+
+        fill: var(--main-text-color);
+        background-color: var(--main-bg-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    &__arrow-right {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        padding: 5px 0;
+        transform: translateY(-50%);
+    
+        fill: var(--main-text-color);
+        background-color: var(--main-bg-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    &__arrow-right:hover,
+    &__arrow-right:focus,
+    &__arrow-left:hover,
+    &__arrow-left:focus {
+        fill: var(--hover-arrow-color);
+    }
+
+    &__arrow-right:active,
+    &__arrow-left:active {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    }
+}
