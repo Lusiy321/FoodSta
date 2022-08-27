@@ -4,7 +4,7 @@
         <use href="/src/images/icon.svg#logo"></use>
         </svg>
         <button
-          class="btn-mobile-menu"
+          class="btn-mobile-menu__open"
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
@@ -12,12 +12,26 @@
             class="btn-mobile-menu__icon"
             width="28"
             height="28"
-            aria-label="Переключатель мобильного меню"
+            aria-label="Открыть мобильное меню"
           >
             <use href="/src/images/icon.svg#mobile-menu-btn"></use>
           </svg>
         </button>
         <nav class="nav">
+          <button
+          class="btn-mobile-menu__close"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+          class="btn-mobile-menu__icon--close"
+          width="24"
+          height="24"
+          aria-label="Открыть мобильное меню"
+        >
+          <use href="/src/images/icon.svg#mobile-menu-btn-close"></use>
+        </svg>
+      </button>
             <ul class="nav__list list">
                 <li class="nav__item"><a class="nav__link link" href="#home">Home</a></li>
                 <li class="nav__item"><a class="nav__link link" href="#about">About</a></li>
