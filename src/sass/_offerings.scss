@@ -125,6 +125,7 @@
     width: 201.6px;
     height: 255.56px;
     position: absolute;
+    z-index: 2;
     left: 25px;
     top: -40px;    
 }
@@ -133,6 +134,7 @@
     width: 257.04px;
     height: 325.84px;
     position: absolute;
+    z-index: 2;
     left: 25px;
     top: -40px;
 }
@@ -140,9 +142,40 @@
     display: block;
     width: 396px;
     height: 502px;
-    position: absolute;
+    position: absolute;    
+    z-index: 2;
     left: 50px;
     top: -70px;
+}
+}
+.apple__shadow{  
+    @media screen and (max-width: 767px) {
+    position: absolute;
+        left: 10px;
+        top: 155px;
+        width: 252px;
+        height: 87px;
+        background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+        filter: blur(26px);
+    }
+    @media screen and (min-width: 768px) {
+    position: absolute;
+    left: 30px;
+    top: 225px;
+    width: 252px;
+    height: 87px;
+    background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+    filter: blur(26px);
+}
+        
+    @media screen and (min-width: 1280px) {
+    position: absolute;
+    left: 130px;
+    top: 380px;    
+    width: 252px;
+    height: 87px;
+    background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+    filter: blur(26px);
 }
 }
 
@@ -159,7 +192,14 @@
     }
             
 }
-.offerings-information__set {
+.offerings-information__set {    
+    
+    @media screen and (min-width: 768px) {
+        display:inline-flex;
+        gap: 90px;
+        padding-right: 80px;
+    }
+
     @media screen and (min-width: 1280px) {
         display: flex;
         gap: 67px;}
@@ -167,6 +207,12 @@
 }
 .offerings__tittle{
     margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+        padding-right: 250px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding-right: 0px;
+    }
 }
 .offerings__tittle__text{
     @media screen and (max-width: 767px) {        
@@ -177,6 +223,7 @@
         margin: 20px 0;
     }
 }
+
 .apple__image-1{
     position: relative;
 }
@@ -278,3 +325,12 @@
     }
 }
 
+.order-icon{
+    width: 48px;
+    height: 48px;
+    background-color: var(--main-bg-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
