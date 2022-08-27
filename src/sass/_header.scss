@@ -28,8 +28,10 @@
 }
 
 .nav__link {
+    font-family: var(--font);
     font-weight: 400;
     color: var(--menu-text-color);
+
 }
 
 @media screen and (max-width: 767px) {
@@ -123,7 +125,7 @@
         width: 100px;
         height: 32px;
 
-
+        font-family: var(--font);
         font-weight: 400;
         font-size: 14px;
         line-height: calc(21 / 14);
