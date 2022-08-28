@@ -18,7 +18,7 @@
         background-image: url(/src/images/offerings/background_ld.jpg);
         background-position: center;
         background-repeat: no-repeat;
-        margin-top: -280px;        
+        margin-top: -320px;        
     }
 }
 
@@ -298,6 +298,7 @@
 }
 }
 .offerings-button__btn{
+    padding: 0;
     width: 106px;
     height: 40px;
     border: 2px solid var(--hover-arrow-color);
@@ -305,9 +306,13 @@
     font-family: var(--font);
     background-color: var(--main-bg-color);
     font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 150%;
+    cursor: pointer;
+
+    transition: border-color var(--animation);
+
     &:hover,
     &:focus{
         border-color: var(--hover-btn-color);
