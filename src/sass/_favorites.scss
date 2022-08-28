@@ -84,6 +84,8 @@
 .favorites__img {
   background: var(--main-bg-color);
 
+  transition: border-color var(--animation);
+
   &:hover,
   &:focus {
     border-color: var(--hover-green-color);
