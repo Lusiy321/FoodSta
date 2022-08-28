@@ -23,7 +23,6 @@
         margin: 0 0 28px;
         font-size: 28px;
         line-height: 1.18;
-        width: 280px;
 
         @media screen and (min-width: 768px) {
             margin-bottom: 44px;
@@ -41,7 +40,6 @@
     &__text {
         font-size: 14px;
         margin: 0 0 28px;
-        width: 266px;
 
         @media screen and (min-width: 768px) {
             font-size: 16px;
@@ -119,6 +117,11 @@
 
     &__img {
         display: block;
+        max-width: 100%;
+        height: auto;
+
+        object-fit: cover;
+        object-position: center;
     }
 
     &__arrow-left,
