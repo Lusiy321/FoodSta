@@ -11,12 +11,14 @@
         background-position: center;
         background-repeat: no-repeat;
         height: 1140px;
+        margin-top: -80px;
     }
     
     @media screen and (min-width: 1280px) {
         background-image: url(/src/images/offerings/background_ld.jpg);
         background-position: center;
         background-repeat: no-repeat;
+        margin-top: -280px;        
     }
 }
 
