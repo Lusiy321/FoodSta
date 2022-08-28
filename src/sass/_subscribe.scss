@@ -112,7 +112,8 @@
     height: 42px;
     background-color: var(--hover-green-color);
     border-radius: 30px;
-    border: none;    
+    border: none;
+    font-family: var(--font);    
     font-weight: 500;
     font-size: 13px;
     line-height: 150%;
@@ -129,4 +130,10 @@
     @media screen and (min-width: 1280px) {
             margin-bottom: 100px;
         }
+}
+.subscribe__email:invalid:focus{
+    border: 0.854167px solid #FF705D;
+}
+.subscribe__email:valid {
+    border: 0.854167px solid var(--hover-green-color);
 }
