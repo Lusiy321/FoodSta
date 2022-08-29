@@ -1,10 +1,11 @@
 .subscribe{
-    @media screen and (max-width: 767px) {margin-top: -40px;}
-    @media screen and (min-width: 768px) {margin-top: -75px;}
+    @media screen and (max-width: 767px) {margin-top: -40px; margin-bottom: 60px;}
+    @media screen and (min-width: 768px) {margin-top: -80px; margin-bottom: 100px;}
     @media screen and (min-width: 1280px) {
         display: flex;
         flex-direction: row-reverse;
-        margin-top: -80px;
+        margin-top: -75px;
+        margin-bottom: 64px;
     }
 }
 .subscribe__image{
@@ -45,7 +46,7 @@
             margin-bottom: 20px;
         }
     @media screen and (min-width: 768px) {
-        margin-bottom: 20px;
+        margin: 20px 0 20px;
     }
     @media screen and (min-width: 1280px) {
             margin-bottom: 20px;
@@ -85,10 +86,12 @@
 .subscribe__email{
     width: 395px;
     height: 42px;
-    border: 0.854167px solid var(--main-yellow-color);
+    border: 1px solid var(--main-yellow-color);
     border-radius: 30px;
     padding-left: 12px;
     cursor: pointer;
+
+    transition: border var(--animation);
     
     &:focus-within {
         outline: none;
@@ -97,7 +100,7 @@
     @media screen and (max-width: 767px) {
     width: 279px;
     height: 42px;
-    border: 0.854167px solid var(--main-yellow-color);
+    border: 1px solid var(--main-yellow-color);
     border-radius: 30px;
     padding-left: 12px;
     margin-bottom: 20px;
@@ -108,32 +111,38 @@
     }
 }
 .subscribe__btn{
-    width: 103px;
+    padding: 0;
+    width: 106px;
     height: 42px;
     background-color: var(--hover-green-color);
     border-radius: 30px;
     border: none;
     font-family: var(--font);    
-    font-weight: 500;
-    font-size: 13px;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 150%;
+    color: var(--main-text-color);
+    cursor: pointer;
+
+    transition: background-color var(--animation);
+
     &:hover{
         background-color: var(--hover-btn1-color) ;
     }
-    @media screen and (max-width: 767px) {
-            margin-bottom: 60px;            
-        }
-    @media screen and (min-width: 768px) {
-            margin-bottom: 100px;
-        }
+    // @media screen and (max-width: 767px) {
+    //         margin-bottom: 60px;            
+    //     }
+    // @media screen and (min-width: 768px) {
+    //         margin-bottom: 100px;
+    //     }
     
-    @media screen and (min-width: 1280px) {
-            margin-bottom: 100px;
-        }
+    // @media screen and (min-width: 1280px) {
+    //         margin-bottom: 100px;
+    //     }
 }
 .subscribe__email:invalid:focus{
-    border: 0.854167px solid #FF705D;
+    border: 1px solid #FF705D;
 }
 .subscribe__email:valid {
-    border: 0.854167px solid var(--hover-green-color);
+    border: 1px solid var(--hover-green-color);
 }
