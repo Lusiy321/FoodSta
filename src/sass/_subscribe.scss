@@ -112,16 +112,19 @@
 }
 .subscribe__btn{
     padding: 0;
-    width: 106px;
+
+    font-family: var(--font);    
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--main-text-color);
+    
+    width: 103px;
     height: 42px;
     background-color: var(--hover-green-color);
     border-radius: 30px;
     border: none;
-    font-family: var(--font);    
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    color: var(--main-text-color);
+    
     cursor: pointer;
 
     transition: background-color var(--animation);
