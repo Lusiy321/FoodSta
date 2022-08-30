@@ -30,7 +30,7 @@
     // desktop screen
     @media screen and (min-width: 1280px) {
         background-image: url('/src/images/customers/bgr/backgroud_img@1x-d.jpg');
-         background-size: auto; 
+         background-size: 1280px; 
          background-position: center center;   
          background-repeat: no-repeat;
          height: 100%;
@@ -96,7 +96,11 @@
     border-bottom-left-radius: 20px;
     padding: 8px 8px 10px 8px;
     margin-bottom: 24px;
-
+    &:hover,
+    &:focus{ 
+        cursor: pointer;       
+        outline: 2px solid var(--main-text-color);        
+    }
     &:last-child{
         margin-bottom: 0px;
     }
