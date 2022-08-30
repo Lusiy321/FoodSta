@@ -34,19 +34,19 @@ p{
 }
 .container{
     @media screen and (max-width: 767px) {
-        max-width: 767px;
+        max-width: 480px;
         margin: 0 auto;
         padding: 0 20px;
     }
 
     @media screen and (min-width: 768px) {
-        max-width: 1279px;
+        max-width: 768px;
         margin: 0 auto;
         padding: 0 32px;
     }
 
     @media screen and (min-width: 1280px) {
-        max-width: 1280px;
+        max-width: 1920px;
         margin: 0 auto;
         padding: 0 16px;
     }

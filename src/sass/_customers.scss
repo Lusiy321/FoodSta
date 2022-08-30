@@ -3,11 +3,11 @@
     @media screen and (max-width: 767px) {
     // mobile screen
     background-image: url('/src/images/customers/bgr/backgroud_img@1x-m.jpg');
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-repeat: no-repeat;
     height: 100%;
-    
+    background-position-y: bottom;
+        
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -17,9 +17,9 @@
     // tablet screen
     @media screen and (min-width: 768px) {
         background-image: url('/src/images/customers/bgr/backgroud_img@1x-t.jpg');
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;        
+        background-repeat: no-repeat;        
+        background-size: cover;
+        background-position-y: bottom;
         height: 100%;
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -30,9 +30,10 @@
     // desktop screen
     @media screen and (min-width: 1280px) {
         background-image: url('/src/images/customers/bgr/backgroud_img@1x-d.jpg');
-         background-size: auto; 
-         background-position: center center;   
+         background-size: 1920px; 
+         background-position: center;   
          background-repeat: no-repeat;
+         background-position-y: bottom;
          height: 100%;
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -44,14 +45,18 @@
 }
 .customers__container{
     padding: 60px 20px;
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
     @media screen and(min-width:768px) and(max-width: 1280px) {
         padding: 60px 32px 120px 32px;
       }
-      @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1280px) {
         padding: 100px 16px 200px 16px;
-      }
+    }
 }
+
 .customers__title{
     margin: 0px;
     font-weight: 700;
@@ -64,11 +69,9 @@
       }
 }
 
-.customers__text{
+.customers__text{    
     margin-top: 20px;
     margin-bottom: 0px;
-
-
     font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
@@ -96,7 +99,11 @@
     border-bottom-left-radius: 20px;
     padding: 8px 8px 10px 8px;
     margin-bottom: 24px;
-
+    &:hover,
+    &:focus{ 
+        cursor: pointer;       
+        outline: 2px solid var(--main-text-color);        
+    }
     &:last-child{
         margin-bottom: 0px;
     }

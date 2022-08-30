@@ -1,6 +1,12 @@
 .subscribe{
-    @media screen and (max-width: 767px) {margin-top: -40px; margin-bottom: 60px;}
-    @media screen and (min-width: 768px) {margin-top: -80px; margin-bottom: 100px;}
+    @media screen and (max-width: 767px) {
+        margin-top: -40px; 
+        margin-bottom: 60px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-top: -75px; 
+        margin-bottom: 100px;
+    }
     @media screen and (min-width: 1280px) {
         display: flex;
         flex-direction: row-reverse;
