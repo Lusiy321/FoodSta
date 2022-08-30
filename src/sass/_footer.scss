@@ -1,4 +1,4 @@
-.shadow_footer{
+.footer{
      @media screen and (max-width: 767px) {
            
        box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
@@ -21,8 +21,8 @@
         background-image: 
         url(..//images/footer/mobile/mobile-1@1x.png),url(..//images/footer/mobile/mobile-2@1x.png),url(..//images/footer/mobile/mobile-3@1x.png),url(..//images/footer/mobile/mobile-4@1x.png),url(..//images/footer/mobile/mobile-5@1x.png), url(..//images/footer/mobile/mobile-6@1x.png),url(..//images/footer/mobile/mobile-7@1x.png),url(..//images/footer/mobile/mobile-8@1x.png) ;
         background-position:top right, top right,bottom right 24px , bottom right 89px,bottom right 150px,bottom right 43px ,top 111px left, top 111px left ;
-        background-repeat: no-repeat;        
-       }
+        background-repeat: no-repeat; 
+    }
 
        @media screen and (min-width: 768px){
         background-image:url(..//images/footer/tablet/tablet-1@1x.png),url(..//images/footer/tablet/tablet-2@1x.png),url(..//images/footer/tablet/tablet-3@1x.png),url(..//images/footer/tablet/tablet-4@1x.png),url(..//images/footer/tablet/tablet-5@1x.png),url(..//images/footer/tablet/tablet-6@1x.png),url(..//images/footer/tablet/tablet-7@1x.png),url(..//images/footer/tablet/tablet-8@1x.png);

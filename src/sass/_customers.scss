@@ -3,11 +3,10 @@
     @media screen and (max-width: 767px) {
     // mobile screen
     background-image: url('/src/images/customers/bgr/backgroud_img@1x-m.jpg');
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
-    height: 100%;
-    
+    background-repeat: no-repeat;
+    height: 780px;
+        
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -17,8 +16,7 @@
     // tablet screen
     @media screen and (min-width: 768px) {
         background-image: url('/src/images/customers/bgr/backgroud_img@1x-t.jpg');
-        background-repeat: no-repeat;
-        background-position: center center;
+        background-repeat: no-repeat;        
         background-size: cover;        
         height: 100%;
         @media (min-device-pixel-ratio: 2),
