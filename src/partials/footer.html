@@ -1,50 +1,50 @@
-<section class="footer ">
-    <div class="container shadow_footer overlay">
+<footer class="footer">
+    <div class="footer__container">
         <!-- Footer logo -->
-        <div class="footer__container">
-            <div class="footer__box-desktop">
+        <div class="footer__desktop">
+            <div class="footer-top">
                 <div class="footer__logo">
                     <svg class="logo" width="66" height="52">
                         <use href="/src/images/icon.svg#logo">Logo</use>
                     </svg>
                 </div>
                 <!-- Footer nav -->
-                <div class="footer__nav">
-                    <ul class="footer__nav-menu">
-                        <li class="footer__nav__item"><a class="nav__link" href="">Home</a></li>
-                        <li class="footer__nav__item"><a class="nav__link" href="">About</a></li>
-                        <li class="footer__nav__item"><a class="nav__link" href="">Service</a></li>
-                        <li class="footer__nav__item"><a class="nav__link" href="">Menu</a></li>
-                        <li class="footer__nav__item"><a class="nav__link" href="">Contacts</a></li>
+                    <ul class="footer-nav list">
+                        <li class="footer-nav__item"><a class="footer-nav__link link" href="#home">Home</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link link" href="#about">About</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link link" href="#service">Service</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link link" href="#menu">Menu</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link link" href="#contacts">Contact</a></li>
                     </ul>
-                </div>
+
             </div>
-            <!-- Footer nav -->
+
 
             <!-- widget subscribe -->
             <div class="widget-subscribe">
                 <h4 class="footer__title">Subscribe</h4>
-                <form action="" class="footer__form">
-                    <input type="email" name="subscribe" id="email" class="footer__email" placeholder="Enter your email"
-                        title="Please enter correct email address" required>
-                    <button type="submit" class="footer__btn">Subscribe</button>
+                <form action="" class="footer-form">
+                    <label class="footer-form__group">
+                    <input type="email" name="subscribe" id="email" class="footer-form__email" placeholder="Enter your email"
+                        required minlength="6">
+                        <span class="footer-form__notfication">Not a valid email address (example@email.com)</span>
+                    </label>
+                    <button type="submit" class="footer-form__btn">Subscribe</button>
                 </form>
                 <p class="checkbox__policy">By subscribing you agree to with our <a href="#"
-                        class="checkbox__policy-link">Privacy Policy</a></p>
+                        class="checkbox__policy-link link">Privacy Policy</a></p>
             </div>
+
         </div>
+
         <!-- Private polici -->
-        <div class="footer__box">
-            <div class="footer__item">
-                <ul class="footer__list list">
-                    <li><a class="footer__link" href="">Privacy Policy</a></li>
-                    <li><a class="footer__link" href="">Terms of Service</a></li>
-                    <li><a class="footer__link" href="">Cookies Settings</a></li>
+        <div class="footer-policy">
+                <ul class="footer-policy__list list">
+                    <li><a class="footer-policy__link link" href="">Privacy Policy</a></li>
+                    <li><a class="footer-policy__link link" href="">Terms of Service</a></li>
+                    <li><a class="footer-policy__link link" href="">Cookies Settings</a></li>
                 </ul>
-            </div>
-            <div class="footer__box-text">
-                <p class="footer__text">2022 FoodSta. All right reserved.</p>
-            </div>
+                <p class="footer-policy__text">2022 FoodSta. All right reserved.</p>
         </div>
     </div>
-</section>
+</footer>
