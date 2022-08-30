@@ -1,39 +1,46 @@
-.customers__container {
+.customers {
     
-
+    @media screen and (max-width: 767px) {
     // mobile screen
     background-image: url('/src/images/customers/bgr/backgroud_img@1x-m.jpg');
-
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         background-image: url('/src/images/customers/bgr/backgroud_img@2x-m.jpg');
     }
-
+}
     // tablet screen
     @media screen and (min-width: 768px) {
         background-image: url('/src/images/customers/bgr/backgroud_img@1x-t.jpg');
-
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;        
+        height: 100%;
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: url('/src/images/customers/bgr/backgroud_img@2x-t.jpg');
         }
     }
-
     // desktop screen
     @media screen and (min-width: 1280px) {
         background-image: url('/src/images/customers/bgr/backgroud_img@1x-d.jpg');
-
+         background-size: auto; 
+         background-position: center center;   
+         background-repeat: no-repeat;
+         height: 100%;
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: url('/src/images/customers/bgr/backgroud_img@2x-d.jpg');
         }
     }
-         background-size: cover;
-    
-         background-repeat: no-repeat;
+        
 }
 .customers__container{
     padding: 60px 20px;

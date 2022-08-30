@@ -8,8 +8,16 @@
   }
   
   @media screen and (min-width: 1280px) {
-    margin-bottom: 100px;
-    margin-top: -50px;
+    margin-bottom: 100px;    
+  }
+}
+.favorites__container{
+  @media screen and (max-width: 767px){
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;   
+    align-content: center; 
   }
 }
 .favorites__title {
@@ -56,34 +64,49 @@
 .list {
   list-style: none;
 }
+.link{
+  margin-bottom: 20px;  
+}
 
-.favorites__list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 28px;
-  padding: 0;
-  margin: 0;
+.favorites__list { 
 
   @media screen and (max-width: 767px) {
-    gap: 20px;
+    display: block;    
+    
+    
   }
 
   @media screen and (min-width: 768px) {
     gap: 28px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    padding: 0;
+    margin: 0;
   }
 
   @media screen and (min-width: 1280px) {
     gap: 28px;
+    display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 28px;
+      padding: 0;
+      margin: 0;
   }
 }
 
-
+.favorites__item{
+  display: flex;
+  justify-content: center;
+}
 .favorites__img {
-  background: var(--main-bg-color);
-
+  background: var(--main-bg-color);  
   transition: border-color var(--animation);
 
   &:hover,
@@ -95,6 +118,8 @@
     border: 11px solid var(--main-yellow-color);
     border-radius: 50%;
     padding: 18px 17px;
+    width: 280px;
+    height: 282px;
   }
 
   @media screen and (min-width: 768px) {

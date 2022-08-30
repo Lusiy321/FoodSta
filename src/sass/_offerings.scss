@@ -1,24 +1,29 @@
 .offerings{    
     @media screen and (max-width: 767px) {
-        background-image: url(/src/images/offerings/background_sm.jpg);
-        background-position: center;
+        background-image: url(/src/images/offerings/background_sm.jpg);        
         background-repeat: no-repeat;
-        height: 1050px;
+        background-size: cover;
+        height: 100%;  
+        padding-bottom: 60px;            
     }
     
     @media screen and (min-width: 768px) {
-        background-image: url(/src/images/offerings/background_md.jpg);
-        background-position: center;
+        background-image: url(/src/images/offerings/background_md.jpg);       
         background-repeat: no-repeat;
-        height: 1140px;
+        background-size: cover;
+        height: 100%;
         margin-top: -80px;
+        padding-bottom: 100px;
     }
     
-    @media screen and (min-width: 1280px) {
+        @media screen and (min-width: 1280px) {
         background-image: url(/src/images/offerings/background_ld.jpg);
-        background-position: center;
         background-repeat: no-repeat;
-        margin-top: -320px;        
+        background-position: center center;
+        background-size: auto;
+        height: 100%;
+        margin-top: -150px; 
+        padding-bottom: 40px;
     }
 }
 
@@ -35,9 +40,8 @@
         padding-top: 187px;
     }
        
-    @media screen and (min-width: 1280px) {
-        display: flex;   
-        padding-top: 380px;
+    @media screen and (min-width: 1280px) and (max-width: 1920px) {
+        display: flex;        
         gap: 90px;       
     }
 }
