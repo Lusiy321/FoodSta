@@ -6,25 +6,77 @@
       varius enim in eros elementum tristique. Duis cursus, mi quis viverra
       ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
     </p>
-    <button class="hero__btn" type="button" data-modal-open-2="">Order Now</button>
+    <button class="hero__btn" type="button" data-modal-open-2="">
+      Order Now
+    </button>
   </div>
   <div class="hero__right-side">
     <div class="hero__dishes-menu">
-      <img class="hero__img" srcset="
-          /src/images/hero/sweets@1x_292.png   292w,
-          /src/images/hero/sweets@1x_528.png   528w,
-          /src/images/hero/sweets@2x_584.png   584w,
-          /src/images/hero/sweets@2x_1056.png 1056w
-        " sizes="
+      <!-- Slider -->
+      <div class="slider">
+        <div class="slider-line">
+          <img
+            class="hero__img"
+            srcset="
+              /src/images/hero/sweets@1x_292.png   292w,
+              /src/images/hero/sweets@1x_528.png   528w,
+              /src/images/hero/sweets@2x_584.png   584w,
+              /src/images/hero/sweets@2x_1056.png 1056w
+            "
+            sizes="
         (min-width: 1280px) 528px, 
-        (min-width: 768px) 292px, 100vw" src="/src/images/hero/sweets@1x_292.png" width="528" height="528"
-        alt="Sweet dish" />
-      <svg class="hero__arrow-left" width="16" height="30">
-        <use href="/src/images/icon.svg#arrow-left"></use>
-      </svg>
-      <svg class="hero__arrow-right" width="16" height="30">
-        <use href="/src/images/icon.svg#arrow-right"></use>
-      </svg>
+        (min-width: 768px) 292px, 100vw"
+            src="/src/images/hero/sweets@1x_292.png"
+            width="528"
+            height="528"
+            alt="Sweet dish"
+          />
+          <img
+            class="hero__img"
+            srcset="
+              /src/images/hero/salad@1x_292.png   292w,
+              /src/images/hero/salad@1x_528.png   528w,
+              /src/images/hero/salad@2x_584.png   584w,
+              /src/images/hero/salad@2x_1056.png 1056w
+            "
+            sizes="
+        (min-width: 1280px) 528px, 
+        (min-width: 768px) 292px, 100vw"
+            src="/src/images/hero/salad@1x_292.png"
+            width="528"
+            height="528"
+            alt="Sweet dish"
+          />
+          <img
+            class="hero__img"
+            srcset="
+              /src/images/hero/breakfast@1x_292.png   292w,
+              /src/images/hero/breakfast@1x_528.png   528w,
+              /src/images/hero/breakfast@2x_584.png   584w,
+              /src/images/hero/breakfast@2x_1056.png 1056w
+            "
+            sizes="
+        (min-width: 1280px) 528px, 
+        (min-width: 768px) 292px, 100vw"
+            src="/src/images/hero/breakfast@1x_292.png"
+            width="528"
+            height="528"
+            alt="Sweet dish"
+          />
+        </div>
+      </div>
+
+      <button type="button" class="slider-prev">
+        <svg class="hero__arrow-left" width="16" height="30">
+          <use href="/src/images/icon.svg#arrow-left"></use>
+        </svg>
+      </button>
+      <button type="button" class="slider-next">
+        <svg class="hero__arrow-right" width="16" height="30">
+          <use href="/src/images/icon.svg#arrow-right"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </section>
+<script src="/src/slider.js"></script>
