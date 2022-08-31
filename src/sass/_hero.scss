@@ -1,9 +1,17 @@
 .hero {
     display: flex;
-    margin-bottom: 50px;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 50px;
+    }
 
     &__left-side {
         padding-top: 60px;
+
+        @media screen and (min-width: 768px) {
+            margin-right: auto;
+        }
+
 
         @media screen and (min-width: 1280px) {
             padding-top: 159px;
@@ -88,11 +96,11 @@
         }
 
         @media screen and (min-width: 1280px) {
-            top: 0;
-            right: 0;
+            right: -40px;
             top: 14px;
             min-width: 608px;
             height: 580px;
+            margin: 0 auto;
         }
     }
 

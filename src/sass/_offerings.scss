@@ -1,10 +1,10 @@
-.offerings{    
+.offerings {    
     @media screen and (max-width: 767px) {
+        padding-bottom: 60px;
         background-image: url(/src/images/offerings/background_sm.jpg);        
         background-repeat: no-repeat;
         background-size: cover;        
         height: 100%;  
-        padding-bottom: 60px;            
     }
     
     @media screen and (min-width: 768px) {
@@ -12,19 +12,21 @@
         background-repeat: no-repeat;
         background-size: cover;
         height: 100%;
-        margin-top: -100px;
-        padding-bottom: 100px;
+        margin-top: -32px;
+        padding-bottom: 103px;
     }
     
         @media screen and (min-width: 1280px) {
         background-image: url(/src/images/offerings/background_ld.jpg);
         background-repeat: no-repeat;
+        background-size: cover;
         background-position: center;
         background-position-y:  top;
         background-size: 1280px;
         height: 100%;
         margin-top: -200px; 
         padding-bottom: 40px;
+
     }
 }
 
@@ -39,7 +41,7 @@
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap; 
-        padding-top: 200px;      
+        padding-top: 187px;      
     }
        
     @media screen and (min-width: 1280px) {
@@ -55,7 +57,7 @@
     }
     @media screen and (min-width: 768px) {
         display: flex;
-        padding-top: 0px;
+        margin-bottom: 60px;
     }
     @media screen and (min-width: 768px) {
         display: flex;
@@ -196,8 +198,8 @@
         display: inline-block;
     }
     @media screen and (min-width: 1280px) {
+        padding-top: 30px;
         width: 573px;
-        height: 393px;        
     }
             
 }
@@ -205,8 +207,7 @@
     
     @media screen and (min-width: 768px) {
         display:inline-flex;
-        gap: 90px;
-        padding-right: 80px;
+        gap: 116px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -214,22 +215,40 @@
         gap: 67px;}
     
 }
-.offerings__tittle{
-    margin-bottom: 40px;
+
+.offerings-information__delivery {
+    margin-bottom: 28px;
+
     @media screen and (min-width: 768px) {
-        padding-right: 250px;
+        margin-bottom: 0px;
+    }
+}
+
+.offerings__tittle{
+    margin-bottom: 28px;
+    @media screen and (min-width: 768px) {
+        min-width: 526px;
+        margin-right: 210px;
+        margin-bottom: 40px;
     }
     @media screen and (min-width: 1280px) {
         padding-right: 0px;
     }
 }
 .offerings__tittle__text{
-    @media screen and (max-width: 767px) {        
         font-size: 28px;
+        line-height: 1.18;
+        margin-bottom: 28px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+        font-size: 42px;
         line-height: 1.17;
-    }
+}
+
     @media screen and (min-width: 1280px) {
-        margin: 20px 0;
+        line-height: 1.2;
+        min-width: 526px;
     }
 }
 
@@ -277,32 +296,67 @@
 }
 
 .offerings-information__tittle{
-    @media screen and (max-width: 767px) {
-        font-size: 18px;
-        line-height: 1.16;
-        margin: 16px 0;
+    margin: 8px 0 16px;
+    font-size: 18px;
+    line-height: 1.17;
+
+    @media screen and (min-width: 1280px) {
+            line-height: 1.39;
         }
 }
+
+.offerings__tittle__desc {
+    font-size: 14px;
+    line-height: 1.14;
+
+    @media screen and (min-width: 768px) {
+        width: 252px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        line-height: 1.5;
+    }
+}
+
 .offerings__tittle__paragraph{
+   
     @media screen and (max-width: 767px) {
-            width: 272px;
+            min-width: 272px;
             font-size: 14px;
             line-height: 1.14;
-        }
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 20px;
+        font-size: 16px;
+        line-height: 1.19;
+    }
+
+    @media screen and (min-width: 1280px) {
+        line-height: 1.5;
+        padding-top: 0;
+    }
 }
 .offerings-button {
     @media screen and (max-width: 767px) {
-    margin-top: 28px;
-    display: flex;
-    gap: 24px;
-    align-items: center;
-}
+        margin-top: 28px;
+        display: flex;
+        gap: 24px;
+        align-items: center;
+    }
+
     @media screen and (min-width: 768px) {
-    margin-top: 28px;
-    display: flex;
-    gap: 24px;
-    align-items: center;
-}
+        margin-top: 37px;
+        display: flex;
+        gap: 24px;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-top: 32px;
+        
+    }
+
 }
 .offerings-button__btn{
     padding: 0;
