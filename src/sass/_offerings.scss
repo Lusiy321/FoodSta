@@ -3,15 +3,13 @@
         padding-bottom: 60px;
         background-image: url(/src/images/offerings/background_sm.jpg);        
         background-repeat: no-repeat;
-        background-size: cover;        
-        height: 100%;  
+        background-size: cover;    
     }
     
     @media screen and (min-width: 768px) {
         background-image: url(/src/images/offerings/background_md.jpg);       
         background-repeat: no-repeat;
-        background-size: cover;
-        height: 100%;
+        background-size: cover;        
         margin-top: -32px;
         padding-bottom: 103px;
     }
@@ -22,12 +20,10 @@
         background-size: cover;
         background-position: center;
         background-position-y:  top;
-        background-size: 1280px;
-        height: 100%;
-        margin-top: -130px; 
-        padding-bottom: 40px;
-
-    }
+        background-size: 1280px;        
+        margin-top: -130px;
+        padding: 0; 
+}
 }
 
 .offerings__box {
@@ -296,26 +292,13 @@
 }
 
 .offerings-information__tittle{
-    margin: 8px 0 16px;
+    padding: 8px 0 16px;
     font-size: 18px;
     line-height: 1.17;
 
     @media screen and (min-width: 1280px) {
             line-height: 1.39;
         }
-}
-
-.offerings__tittle__desc {
-    font-size: 14px;
-    line-height: 1.14;
-
-    @media screen and (min-width: 768px) {
-        width: 252px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        line-height: 1.5;
-    }
 }
 
 .offerings__tittle__paragraph{
@@ -326,15 +309,15 @@
             line-height: 1.14;
     }
 
-    @media screen and (min-width: 768px) {
-        padding-top: 20px;
-        font-size: 16px;
+    @media screen and (min-width: 768px) {        
+        font-size: 14px;
         line-height: 1.19;
     }
 
     @media screen and (min-width: 1280px) {
         line-height: 1.5;
         padding-top: 0;
+        font-size: 14px;
     }
 }
 .offerings-button {
