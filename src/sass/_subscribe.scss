@@ -136,7 +136,7 @@
 
 .subscribe-form__notfication {
     position: absolute;
-    bottom: -15px;
+    bottom: 0px;
     left: 0;
     display: inline-flex;
     align-items: center;
@@ -160,6 +160,10 @@
     }
     .subscribe__email:invalid:required:not(:placeholder-shown) ~ & {
         opacity: 1;
+      }
+
+      @media screen and (min-width: 768px){
+      bottom: -15px;
       }
 
 }
