@@ -21,9 +21,9 @@
         background-repeat: no-repeat;
         background-position: center;
         background-position-y:  top;
-        background-size: 1920px;
+        background-size: 1280px;
         height: 100%;
-        margin-top: -250px; 
+        margin-top: -200px; 
         padding-bottom: 40px;
     }
 }
@@ -42,10 +42,10 @@
         padding-top: 200px;      
     }
        
-    @media screen and (min-width: 1280px) and (max-width: 1920px) {
+    @media screen and (min-width: 1280px) {
         display: flex;        
         gap: 90px;
-        padding-top: 300px;
+        padding-top: 230px;
     }
 }
 .apple-box {
