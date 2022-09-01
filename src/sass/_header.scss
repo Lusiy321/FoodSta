@@ -49,8 +49,7 @@
         &:hover,
         &:focus {
             background-color: var(--hover-green-color);
-            color: var(--main-text-color);
-            text-decoration: none;
+            color: var(--main-text-color);           
         }
     }
 
@@ -120,7 +119,6 @@
         &:focus {
             color: var(--hover-green-color);
             text-decoration: underline;
-            text-decoration: none
         }
     }
 

@@ -72,7 +72,7 @@
     justify-content: center;
     gap: 24px;
     @media screen and (max-width: 767px){
-    gap: 10px;
+    gap: 20px;
     }
 }
 .modal-btn {
@@ -135,4 +135,83 @@ div.modal strong {
     padding: 0 40px;
     margin-top: 32px;
     margin-bottom: 20px;  
+}
+.input-register-label{
+    position: relative;
+}
+.modal-form__username,
+.modal-form__phone,
+.modal-form__email {
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: calc(15 / 10);
+    color: #FF705D;
+    opacity: 0;
+    transition: opacity var(--animation);
+
+    &::before {
+        content: "";
+        background-image: url(/src/images/footer/notfication.svg);
+        width: 12px;
+        height: 12px;
+    }
+
+    .modal__email:invalid:required:not(:placeholder-shown)~& {
+        opacity: 1;
+    }
+
+    @media screen and (max-width: 767px) {
+        top: 65px;
+    }
+}
+
+.modal__email {
+    width: 395px;
+    height: 42px;
+    border: 1px solid var(--main-yellow-color);
+    border-radius: 30px;
+    padding-left: 12px;
+    cursor: pointer;
+
+    transition: border var(--animation);
+
+    &:focus-within {
+        outline: none;
+    }
+
+    &::placeholder {
+        transition: transform 500ms ease-out;
+    }
+
+    &:focus::placeholder {
+        transform: translateX(160px);
+    }
+
+    &:invalid:not(:placeholder-shown) {
+        border: 0.854167px solid #FF705D;
+    }
+
+    &:valid {
+        border: 0.854167px solid var(--hover-green-color);
+    }
+
+    @media screen and (max-width: 767px) {
+        width: 279px;
+        height: 42px;
+        border: 1px solid var(--main-yellow-color);
+        border-radius: 30px;
+        padding-left: 12px;
+        cursor: pointer;
+
+        &:focus-within {
+            outline: none;
+        }
+    }
 }

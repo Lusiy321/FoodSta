@@ -12,8 +12,9 @@
           <label for="user-name" class="input-register-label">
             <span class="modal-text">Name</span>
             <span class="modal-input">
-              <input type="text" name="user-name" id="user-name" class="subscribe__email" placeholder="Your name"
-                required>
+              <input type="text" name="user-name" id="user-name" class="modal__email" placeholder="Your name" required
+                minlength="3">
+              <span class="modal-form__username">Not a valid username</span>
             </span>
           </label>
         </div>
@@ -21,8 +22,9 @@
           <label for="user-phone" class="input-register-label">
             <span class="modal-text">Phone number</span>
             <span class="modal-input">
-              <input type="tel" name="user-phone" id="user-phone" class="subscribe__email"
-                placeholder="+38(0_ _) _ _ _   _ _   _ _" required>
+              <input type="tel" name="user-phone" id="user-phone" class="modal__email"
+                placeholder="+38(0_ _) _ _ _   _ _   _ _" required minlength="13" maxlength="14">
+              <span class="modal-form__phone">Not a valid phone number (+380987776655)</span>
             </span>
           </label>
         </div>
@@ -30,8 +32,9 @@
           <label for="e-mail" class="input-register-label">
             <span class="modal-text">E-mail</span>
             <span class="modal-input">
-              <input type="email" name="subscribe" id="e-mail" class="subscribe__email" placeholder="example@gmail.com"
+              <input type="email" name="subscribe" id="e-mail" class="modal__email" placeholder="example@gmail.com"
                 title="Please enter correct email address" required>
+              <span class="modal-form__email">Not a valid email address (example@email.com)</span>
             </span>
           </label>
         </div>
