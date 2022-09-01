@@ -36,6 +36,10 @@ p{
     font-size: 16px;
     line-height: 1.5;
 }
+.no-scroll {
+    overflow: hidden;
+}
+
 .container{
     @media screen and (max-width: 767px) {
         max-width: 480px;
