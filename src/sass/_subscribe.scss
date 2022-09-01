@@ -112,7 +112,7 @@
     }
 
     &:focus::placeholder {
-        transform: translateX(160px);
+        transform: translateX(250px);
     }
 
     &:invalid:not(:placeholder-shown){
@@ -132,7 +132,18 @@
     &:focus-within{
         outline: none;
     }
+        &:focus::placeholder {
+            transform: translateX(140px);
         }
+    
+        &:invalid:not(:placeholder-shown) {
+            border: 0.854167px solid #FF705D;
+        }
+    
+        &:valid {
+            border: 0.854167px solid var(--hover-green-color);
+        }
+    }
 }
 
 .subscribe-form__notfication {

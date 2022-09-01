@@ -189,11 +189,7 @@ div.modal strong {
     &::placeholder {
         transition: transform 500ms ease-out;
     }
-
-    &:focus::placeholder {
-        transform: translateX(160px);
-    }
-
+  
     &:invalid:not(:placeholder-shown) {
         border: 0.854167px solid #FF705D;
     }
