@@ -1,9 +1,14 @@
 .offerings {    
     @media screen and (max-width: 767px) {
+        max-width: 480px;  
+        margin: 0 auto;      
+        background-position: center;
+        background-position-y: top;
         padding-bottom: 60px;
         background-image: url(/src/images/offerings/background_sm.jpg);        
         background-repeat: no-repeat;
-        background-size: cover;    
+        background-size: cover; 
+
     }
     
     @media screen and (min-width: 768px) {
@@ -20,7 +25,7 @@
         background-size: cover;
         background-position: center;
         background-position-y:  top;
-        background-size: 1280px;        
+        max-width: 1920px;
         margin-top: -130px;
         padding: 0; 
 }

@@ -6,7 +6,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
+    margin: 0 auto;    
     background-position-y: bottom;
+    max-width: 480px;
         
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -30,11 +32,11 @@
     // desktop screen
     @media screen and (min-width: 1280px) {
         background-image: url('/src/images/customers/bgr/backgroud_img@1x-d.jpg');
-         background-size: 1280px; 
-         background-position: center;   
-         background-repeat: no-repeat;
-         background-position-y: bottom;
-         height: 100%;
+        max-width: 1920px;
+        background-position: center;   
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        height: 100%;
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
