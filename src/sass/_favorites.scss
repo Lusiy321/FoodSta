@@ -86,17 +86,14 @@
 .favorites__item{
   display: flex;
   justify-content: center;
-  flex-basis: 280px;
 
 
   @media screen and (min-width: 768px) {
-  // flex-basis: calc((100% - 32px) / 2);
-  flex-basis: 336px;
+  flex-basis: calc((100% - 96px) / 2);
   }
 
   @media screen and (min-width: 1280px) {
-    // flex-basis: calc((100% - 64px) / 3);
-    flex-basis: 395px;
+    flex-basis: calc((100% - 96px) / 3);
     }
 }
 .favorites__img {
