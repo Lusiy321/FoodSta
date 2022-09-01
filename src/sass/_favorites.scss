@@ -77,7 +77,7 @@
     margin: 0;
 
   @media screen and (min-width: 768px) {
-    gap: 16px;
+    gap: 24px;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -86,14 +86,17 @@
 .favorites__item{
   display: flex;
   justify-content: center;
+  flex-basis: 280px;
 
 
   @media screen and (min-width: 768px) {
-  flex-basis: calc((100% - 32px) / 2);
+  // flex-basis: calc((100% - 32px) / 2);
+  flex-basis: 336px;
   }
 
   @media screen and (min-width: 1280px) {
-    flex-basis: calc((100% - 64px) / 3);
+    // flex-basis: calc((100% - 64px) / 3);
+    flex-basis: 395px;
     }
 }
 .favorites__img {
